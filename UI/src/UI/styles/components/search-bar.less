@@ -1,0 +1,19 @@
+@search-prefix-cls: ~"@{css-prefix}search-bar";
+
+.@{search-prefix-cls} {
+  &-content {
+    padding: 15px;
+  }
+
+  &-top-button {
+    padding-left: 20px;
+  }
+
+  &-bottom-button {
+    >* {
+      margin-right: 10px;
+    }
+
+    text-align: center;
+  }
+}

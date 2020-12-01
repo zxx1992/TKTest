@@ -1,0 +1,20 @@
+/**
+* author: duxin
+* date: 2020/5/11
+* describe: 混入
+*/
+
+//溢出单行显示
+.ellipsis-single(){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+//多行溢出显示
+.ellipsis-multiple(@lines:2){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @lines;
+  overflow: hidden;
+}
+
